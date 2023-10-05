@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="541.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchController">
+    <children>
+      <Label layoutY="-3.0" prefHeight="55.0" prefWidth="542.0" style="-fx-background-color: linear-gradient(to right,#CAF0F8, #edf2fb);" />
+          <Label fx:id="titleLabel" layoutX="163.0" layoutY="5.0" prefHeight="39.0" prefWidth="202.0" style="-fx-background-color: transparent;" text="Дані про безробітних" textFill="#042a80">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+          </Label>
+      <Button fx:id="searchVacancyButton" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="353.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to right,#8dccfa, #042a80);" text="знайти роботу" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableAccount" layoutY="52.0" prefHeight="293.0" prefWidth="541.0" style="-fx-font-size: 15;">
+        <columns>
+          <TableColumn fx:id="pibColumnAccount" prefWidth="259.20005494356155" text="ПІБ" />
+          <TableColumn fx:id="numberPassportColumnAccount" prefWidth="124.0" text="номер паспорта" />
+            <TableColumn fx:id="seriaPassportColumnAccount" prefWidth="119.19998168945312" text="серія паспорта" />
+            <TableColumn fx:id="phoneColumnAccount" prefWidth="152.800048828125" text="телефон" />
+            <TableColumn fx:id="specialtyColumnAccount" prefWidth="338.39996337890625" text="спеціальність" />
+            <TableColumn fx:id="dateColumnAccount" prefWidth="152.0" text="дата" />
+        </columns>
+      </TableView>
+      <Button fx:id="deleteAccountButton" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="353.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to right,#8dccfa, #042a80);" text="зняти з обліку" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToVacancyButton" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="396.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to right,#8dccfa, #042a80);" text="перейти до вакансій" textFill="WHITE" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="backToCabinetButton" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="396.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to right,#8dccfa, #042a80);" text="перейти до кабінету" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableVacancy" layoutX="-1.0" layoutY="52.0" prefHeight="293.0" prefWidth="542.0" style="-fx-font-size: 15;" visible="false">
+         <columns>
+            <TableColumn fx:id="positionColumnVacancy" prefWidth="271.99997556209564" text="назва посади" />
+            <TableColumn fx:id="specialtyColumnVacancy" prefWidth="361.6000671386719" text="спеціальність" />
+            <TableColumn fx:id="salaryColumnVacancy" prefWidth="124.0" text="заробітна плата" />
+            <TableColumn fx:id="skillsColumnVacancy" prefWidth="232.0" text="потрібні навички" />
+            <TableColumn fx:id="nameCompanyColumnVacancy" prefWidth="372.80010986328125" text="назва організації" />
+            <TableColumn fx:id="pibColumnVacancy" prefWidth="321.5999755859375" text="ПІБ відповідального" />
+            <TableColumn fx:id="phoneColumnVacancy" prefWidth="158.39990234375" text="номер" />
+         </columns>
+      </TableView>
+      <Button fx:id="deleteVacancyButton" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="353.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to right,#8dccfa, #042a80);" text="зняти з обліку" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToAccountButton" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="396.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="247.0" style="-fx-background-color: linear-gradient(to right,#8dccfa, #042a80);" text="перейти до безробітних" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
